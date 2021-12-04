@@ -14,7 +14,7 @@ export default class Load extends Phaser.Scene {
         this.load.image('student1','Student1.jpg');
         this.load.image('student2','Student2.jpg');
         ///////////////////////////////
-        this.load.atlasXML('numbersAtlas', 'numbersSpriteSheet.png', 'sprites.xml');
+       /* this.load.atlasXML('numbersAtlas', 'numbersSpriteSheet.png', 'sprites.xml');
         this.load.atlas('ninja_run_2', 'ninja_run_spritesheet.png', 'ninja_run_spritesheet.json');
         this.load.atlas('ninja_ow_2', 'ninja_ow_spritesheet.png', 'ninja_ow_spritesheet.json');
         this.load.atlas('ninja_jump_2', 'ninja_jump_spritesheet.png', 'ninja_jump_spritesheet.json');
@@ -261,7 +261,7 @@ export default class Load extends Phaser.Scene {
         //     frameRate: 0,
         //     repeat: 0,
         // })
-
+*/
         // ...and pass to the next Scene
         //this.scene.start('creditScene');
         this.scene.start('menuScene');

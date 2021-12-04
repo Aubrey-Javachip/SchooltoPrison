@@ -27,7 +27,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //this.add.image(100,400,'textbox').setOrigin(0.5);
     //this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //this.add.image(this.scale.width / 4,this.scale.height/4,'student1').setOrigin(0,0);
-    this.add.image(600,120,'student2').setOrigin(0,0);
+    //this.add.image(600,120,'student2').setOrigin(0,0);
 	this.label = this.add.text(100, 100, '',menuConfig);
     this.typewriteText('Welcome to the Prison Pipeline.');
     //
