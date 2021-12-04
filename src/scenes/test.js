@@ -42,7 +42,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
                 //     }
                 // })
 
-        this.scene.start('menuScene');
+        this.scene.start('student1Scene');
         //play student1.js
         }, this);
 
@@ -55,7 +55,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
                 //     }
                 // })
 
-        this.scene.start('menuScene');
+        this.scene.start('student2Scene');
         //play student2.js
         }, this);
 }

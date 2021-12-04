@@ -25,13 +25,15 @@ import Credits from "./scenes/Credits.js";
 import Play from "./scenes/Play.js";
 import Load from "./scenes/Load.js";
 import Test from "./scenes/test.js";
+import Student1 from "./scenes/Student1.js";
+import Student2 from "./scenes/Student2.js";
 
 let config = {
     parent: "phaser-game",
     type: Phaser.AUTO,
     width: 960,
     height: 480,
-    scene: [Load, Menu, Test, Instructions, Credits, Play],
+    scene: [Load, Menu, Test, Student1, Student2, Instructions, Credits, Play],
     scale: {
         // mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
