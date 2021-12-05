@@ -22,6 +22,8 @@ import Securityfight from "./scenes/Securityfight.js";
 import Tardy from "./scenes/Tardy.js";
 import Classroom1 from "./scenes/Classroom1.js";
 import Classroom2 from "./scenes/Classroom2.js";
+import Friend1 from "./scenes/Friend1.js";
+import Friend2 from "./scenes/Friend2.js";
 
 let config = {
     parent: "phaser-game",
@@ -29,7 +31,7 @@ let config = {
     width: 960,
     height: 480,
     scene: [Load, Menu, Test, Student1, Student2, Security1, Security2, Securitygood, Securitybad, Securityfight, Tardy,
-         Classroom1, Classroom2, Instructions, Credits, Play],
+         Classroom1, Classroom2, Friend1, Friend2, Instructions, Credits, Play],
     scale: {
         // mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,

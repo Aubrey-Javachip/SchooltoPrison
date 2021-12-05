@@ -1,8 +1,8 @@
 import game from "../main.js";
 
-export default class Classroom1 extends Phaser.Scene{
+export default class Friend1 extends Phaser.Scene{
     constructor(){
-        super("classroom1Scene");
+        super("friend1Scene");
     }
 
 
@@ -25,7 +25,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
 
         let selectConfig = {
             fontFamily: 'Courier',
-            fontSize: '30px',
+            fontSize: '20px',
             //backgroundColor: '#A3C941',
             color: '#00ffff',
             align: 'center',
@@ -44,10 +44,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'You arrive to class and you sit at your assigned seat in front of the teachers desk.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280, ' You\'re struggling with the class material and need help.',menuConfig).setInteractive();
-    //this.label = this.add.text(100, 320, 'We\'re sending you to the office to be marked tardy.',menuConfig).setInteractive();
-    //this.label = this.add.text(100, 340, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
+	this.label = this.add.text(100, 260, 'You ask your friend next to you a question during class. ' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 280,'Teacher: You\'re being disrespectful. Go sit out in the hallway ',menuConfig).setInteractive();
+    this.label = this.add.text(100, 320, 'for the rest of class. I\'ll deal with you later.',menuConfig).setInteractive();
+    this.label = this.add.text(100, 360, 'You stop talking and continue to sit outside of the classroom',menuConfig).setInteractive();
+    this.label = this.add.text(100, 380, 'until class is over and the teacher gives you after school detention.',menuConfig).setInteractive();
+    //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
+   // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
         //play student2.js
@@ -56,7 +59,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 
     //choice 1
-    this.label2 = this.add.text(90, 400, '',selectConfig).setInteractive();
+    this.label2 = this.add.text(90, 420, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
          this.label2.setStyle({ fill: '#ff0'})});
@@ -64,14 +67,14 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('friend1Scene');
+        this.scene.start('tardyScene');
         //play student2.js
         }, this);
-    this.typewriteText2('Ask a Friend for help');
+    this.typewriteText2('Go to lunch');
 
     
-   //choice 2
-    this.label3 = this.add.text(600, 400, '',selectConfig).setInteractive();
+  /*  //choice 2
+    this.label3 = this.add.text(500, 400, '',selectConfig).setInteractive();
     //change text color
     this.label3.on("pointerover",() => {
          this.label3.setStyle({ fill: '#ff0'})});
@@ -79,13 +82,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label3.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label3.on("pointerdown", () => {
-        this.scene.start('tardyScene');
+        this.scene.start('menuScene');
         //play student2.js
         }, this);
-    this.typewriteText3('Raise your hand');
-    
+    this.typewriteText3('Go to school');
+    */
 }
-
+/*
 typewriteText3(text)
 {
 	const length = text.length
@@ -98,7 +101,7 @@ typewriteText3(text)
     delay: 100} );
 	})
 }
-
+*/
 typewriteText2(text)
 {
 	const length = text.length
@@ -108,7 +111,7 @@ typewriteText2(text)
         ++i
     },
     repeat: length - 1,
-    delay: 100} );
+    delay: 50} );
 	})
 }
 
