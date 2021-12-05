@@ -79,7 +79,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label3.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label3.on("pointerdown", () => {
-        this.scene.start('tardyScene');
+        this.scene.start('handScene');
         //play student2.js
         }, this);
     this.typewriteText3('Raise your hand');

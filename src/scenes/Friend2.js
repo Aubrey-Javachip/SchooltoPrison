@@ -44,11 +44,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'You insist that you\'ve never been late before and that you ' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280,'did your best to make it to school.',menuConfig).setInteractive();
-    this.label = this.add.text(100, 320, 'Security: If you continue to keep talking back and resisting,',menuConfig).setInteractive();
-    this.label = this.add.text(100, 340, 'we\'re gonna have a bigger problem.',menuConfig).setInteractive();
-    //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
+	this.label = this.add.text(100, 260, 'You talk to your friend sitting next to you during class for fun.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 300,'Teacher: Please keep the chatting outside of the classroom.',menuConfig).setInteractive();
+    this.label = this.add.text(100, 340, 'You stop talking and continue to sit through class until...',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
@@ -69,7 +67,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
         this.scene.start('tardyScene');
         //play student2.js
         }, this);
-    this.typewriteText2('You head to the office, you don\'t want to get in more trouble.');
+    this.typewriteText2('Time for lunch');
 
     
   /*  //choice 2
