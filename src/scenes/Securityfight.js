@@ -66,7 +66,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('menuScene');
+        this.scene.start('tardyScene');
         //play student2.js
         }, this);
     this.typewriteText2('You head to the office, you don\'t want to get in more trouble.');
@@ -110,7 +110,7 @@ typewriteText2(text)
         ++i
     },
     repeat: length - 1,
-    delay: 100} );
+    delay: 50} );
 	})
 }
 

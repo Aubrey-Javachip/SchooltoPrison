@@ -19,13 +19,17 @@ import Security2 from "./scenes/Security2.js";
 import Securitygood from "./scenes/Securitygood.js";
 import Securitybad from "./scenes/Securitybad.js";
 import Securityfight from "./scenes/Securityfight.js";
+import Tardy from "./scenes/Tardy.js";
+import Classroom1 from "./scenes/Classroom1.js";
+import Classroom2 from "./scenes/Classroom2.js";
 
 let config = {
     parent: "phaser-game",
     type: Phaser.AUTO,
     width: 960,
     height: 480,
-    scene: [Load, Menu, Test, Student1, Student2, Security1, Security2, Securitygood, Securitybad, Securityfight, Instructions, Credits, Play],
+    scene: [Load, Menu, Test, Student1, Student2, Security1, Security2, Securitygood, Securitybad, Securityfight, Tardy,
+         Classroom1, Classroom2, Instructions, Credits, Play],
     scale: {
         // mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,

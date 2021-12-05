@@ -1,8 +1,8 @@
 import game from "../main.js";
 
-export default class Securitygood extends Phaser.Scene{
+export default class Tardy extends Phaser.Scene{
     constructor(){
-        super("securitygoodScene");
+        super("tardyScene");
     }
 
 
@@ -44,10 +44,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'You explain the mishap with you alarm.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 300, 'Security: Alright, make sure you\'re here on time.',menuConfig).setInteractive();
-    //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
-   // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
+	this.label = this.add.text(100, 300, 'You accept the tardy and go to class as usual.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 320, 'Hopefully you didn\'t miss too much class.',menuConfig).setInteractive();
+   // this.label = this.add.text(100, 340, 'class before security closes the school gate...',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
         //play student2.js
@@ -55,7 +54,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
    // this.typewriteText('You wake up in the morning to realize your alarm clock did not go off.\n You\'re late for schoool! Filled with panic, you rush out to get to class before security closes the school gate..');
     //
 
-    //choice 1
+    //
     this.label2 = this.add.text(100, 400, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
@@ -64,33 +63,25 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('classroom2Scene');
+        this.scene.start('classroom1Scene');
         //play student2.js
         }, this);
-    this.typewriteText2('You go to class as usual');
+    this.typewriteText2('Begin Class');
 
-    
-  /*  //choice 2
-    this.label3 = this.add.text(500, 400, '',selectConfig).setInteractive();
-    //change text color
-    this.label3.on("pointerover",() => {
-         this.label3.setStyle({ fill: '#ff0'})});
-    this.label3.on("pointerout",() => {
-              this.label3.setStyle({ fill: '#00ffff'})});
-    //change scene on click
+   /* this.label3 = this.add.text(300, 400, '',menuConfig).setInteractive();
     this.label3.on("pointerdown", () => {
         this.scene.start('menuScene');
         //play student2.js
         }, this);
-    this.typewriteText3('Go to school');
-    */
+    this.typewriteText3('Choose a student');
+    
 }
-/*
+
 typewriteText3(text)
 {
 	const length = text.length
 	let i = 0
-    this.time.delayedCall(200, () => { this.time.addEvent({callback: () => {
+    this.time.delayedCall(3000, () => { this.time.addEvent({callback: () => {
         this.label3.text += text[i]
         ++i
     },
@@ -98,7 +89,10 @@ typewriteText3(text)
     delay: 100} );
 	})
 }
-*/
+
+update(){
+    */
+}
 typewriteText2(text)
 {
 	const length = text.length

@@ -1,8 +1,8 @@
 import game from "../main.js";
 
-export default class Securitygood extends Phaser.Scene{
+export default class Classroom1 extends Phaser.Scene{
     constructor(){
-        super("securitygoodScene");
+        super("classroom1Scene");
     }
 
 
@@ -44,10 +44,10 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'You explain the mishap with you alarm.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 300, 'Security: Alright, make sure you\'re here on time.',menuConfig).setInteractive();
-    //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
-   // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
+	this.label = this.add.text(100, 260, 'You arrive to class and you sit at your assigned seat in front of the teachers desk.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 280, ' You\'re struggling with the class material and need help.',menuConfig).setInteractive();
+    //this.label = this.add.text(100, 320, 'We\'re sending you to the office to be marked tardy.',menuConfig).setInteractive();
+    //this.label = this.add.text(100, 340, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
         //play student2.js
@@ -56,7 +56,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 
     //choice 1
-    this.label2 = this.add.text(100, 400, '',selectConfig).setInteractive();
+    this.label2 = this.add.text(90, 400, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
          this.label2.setStyle({ fill: '#ff0'})});
@@ -64,14 +64,14 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('classroom2Scene');
+        this.scene.start('securityfightScene');
         //play student2.js
         }, this);
-    this.typewriteText2('You go to class as usual');
+    this.typewriteText2('Ask a Friend for help');
 
     
-  /*  //choice 2
-    this.label3 = this.add.text(500, 400, '',selectConfig).setInteractive();
+   //choice 2
+    this.label3 = this.add.text(600, 400, '',selectConfig).setInteractive();
     //change text color
     this.label3.on("pointerover",() => {
          this.label3.setStyle({ fill: '#ff0'})});
@@ -79,13 +79,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label3.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label3.on("pointerdown", () => {
-        this.scene.start('menuScene');
+        this.scene.start('tardyScene');
         //play student2.js
         }, this);
-    this.typewriteText3('Go to school');
-    */
+    this.typewriteText3('Raise your hand');
+    
 }
-/*
+
 typewriteText3(text)
 {
 	const length = text.length
@@ -98,7 +98,7 @@ typewriteText3(text)
     delay: 100} );
 	})
 }
-*/
+
 typewriteText2(text)
 {
 	const length = text.length
