@@ -1,21 +1,8 @@
 /*
-    Creators: Finn Morrison, Emersen Lorenz, Marla De Leon, Aubrey Schelbauer
-    Title: "Desert Ninja"
-    Completed: 5/4/21
-    Creative Tilt: 
-    (Technical)
-    The game's difficulty increases as the player's score increases.
-    This is calculated using a shifiting normal distribution equation which would look like a bell curve on a graph.
-    As the score increases, the chances of harder enemies spawning increases.
-    This creates a dynamic flow between the different types of enemies, where easier enemies are smoothly phased out and replaced with easier ones.
-    The player's score also changes how many enemy spawning points are active, how quickly enemies can spawn, and the speed of the background and rock obstacles.
-    We implemented state machines both fore the player and the enemies which allowed us easier control over their behavior.
-    (Visual)
-    Tweens were added to make the enemies smoothly come in from off screen and bob up and down to make them look like they were hovering in the air,
-    adding more to asethic of the game. The parallax scrolling also increases its speed the further the player progresses and the more points they earn. 
-    We are very proud of our original soundtrack, sfx and animations created to make the game feel cohesive and visually interesting.
-    The pixel art was scaled up by a factor of 4 so that it would look and flow smoothly as every "pixel" in the art is actually 16 pixels.
-    This was the first time for most of us creating pixel art so we are proud of what we were able to learn and accomplish for this project.
+    Creators:Aubrey Schelbauer
+    Title: "Prison Pipeline"
+    Completed: 12/7/21
+   
 */
 
 
@@ -27,13 +14,18 @@ import Load from "./scenes/Load.js";
 import Test from "./scenes/test.js";
 import Student1 from "./scenes/Student1.js";
 import Student2 from "./scenes/Student2.js";
+import Security1 from "./scenes/Security1.js";
+import Security2 from "./scenes/Security2.js";
+import Securitygood from "./scenes/Securitygood.js";
+import Securitybad from "./scenes/Securitybad.js";
+import Securityfight from "./scenes/Securityfight.js";
 
 let config = {
     parent: "phaser-game",
     type: Phaser.AUTO,
     width: 960,
     height: 480,
-    scene: [Load, Menu, Test, Student1, Student2, Instructions, Credits, Play],
+    scene: [Load, Menu, Test, Student1, Student2, Security1, Security2, Securitygood, Securitybad, Securityfight, Instructions, Credits, Play],
     scale: {
         // mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
