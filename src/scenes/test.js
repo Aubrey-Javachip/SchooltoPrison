@@ -35,8 +35,14 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.typewriteText2('Choose a student');
 
     //this.start = this.add.image(game.config.width/4 + 100, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.5).setOrigin(0).setInteractive();
-    this.start = this.add.image(game.config.width/4 + 70, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
-    this.start.on("pointerdown", () => {
+    this.start1 = this.add.image(game.config.width/4 + 70, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
+    
+    //change pic opacity
+    this.start1.on("pointerover",() => {
+         this.start1.alpha = (0.5)});
+    this.start1.on("pointerout",() => {
+              this.start1.alpha = (1)});
+    this.start1.on("pointerdown", () => {
                 // this.game.scene.scenes.forEach(scene => {
                 //     if (this.gameManager && scene.key && scene.key.includes("_")){
                 //         this.gameManager.destroyScene(scene);
@@ -48,9 +54,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
         }, this);
 
     ///////////////////////////////////////////////////////////////////////    
-   this.start = this.add.image(game.config.width/4 + 320, game.config.height/4 +150, 'student2', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
+    this.start2 = this.add.image(game.config.width/4 + 320, game.config.height/4 +150, 'student2', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
   //  this.start = this.add.image('student2', menuConfig).setOrigin(0,0).setInteractive();
-    this.start.on("pointerdown", () => {
+    this.start2.on("pointerover",() => {
+        this.start2.alpha = (0.5)});
+    this.start2.on("pointerout",() => {
+            this.start2.alpha = (1)});
+    this.start2.on("pointerdown", () => {
                 // this.game.scene.scenes.forEach(scene => {
                 //     if (this.gameManager && scene.key && scene.key.includes("_")){
                 //         this.gameManager.destroyScene(scene);
