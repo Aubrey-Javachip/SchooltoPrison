@@ -45,8 +45,8 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
     //
     
-	this.label = this.add.text(100, 260, 'You arrive to class and you sit at your normal seat at the front.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280, 'You\'re having a hard time but don\'t feel like participating.' ,menuConfig).setInteractive();
+	this.label = this.add.text(100, 300, 'You arrive to class and you sit at your normal seat at the front.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 320, 'You\'re having a hard time but don\'t feel like participating.' ,menuConfig).setInteractive();
     //this.label = this.add.text(100, 300, '.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();

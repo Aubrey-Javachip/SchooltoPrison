@@ -69,7 +69,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('endScene');
+        this.scene.start('outcomeScene');
         //play student2.js
         }, this);
     this.typewriteText2('End of the Day');

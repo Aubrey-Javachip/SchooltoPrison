@@ -45,9 +45,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'happy', menuConfig).setScale(1).setOrigin(0)
     //
     
-	this.label = this.add.text(100, 260, 'You arrive to class and you sit at your assigned seat in front' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280, 'of the teachers desk.',menuConfig).setInteractive();
-    this.label = this.add.text(100, 300, 'You\'re struggling with the class material and need help.',menuConfig).setInteractive();
+	this.label = this.add.text(100, 300, 'You arrive to class and you sit at your assigned seat in front' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 320, 'of the teachers desk.',menuConfig).setInteractive();
+    this.label = this.add.text(100, 340, 'You\'re struggling with the class material and need help.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 320, 'We\'re sending you to the office to be marked tardy.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 340, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {

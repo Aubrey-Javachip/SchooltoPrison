@@ -30,7 +30,12 @@ import Lunch1 from "./scenes/Lunch1.js";
 import Lunch2 from "./scenes/Lunch2.js";
 import Fight1 from "./scenes/Fight1.js";
 import Fight2 from "./scenes/Fight2.js";
+import Class from "./scenes/class.js";
+import Bag from "./scenes/Bag.js";
+import No from "./scenes/No.js";
 import End from "./scenes/End.js";
+import Outcome from "./scenes/Outcome.js";
+import Outcome2 from "./scenes/Outcome2.js";
 
 let config = {
     parent: "phaser-game",
@@ -38,7 +43,7 @@ let config = {
     width: 960,
     height: 480,
     scene: [Load, Menu, Test, Student1, Student2, Security1, Security2, Securitygood, Securitybad, Securityfight, Tardy,
-         Classroom1, Classroom2, Friend1, Friend2, Hand, Zone, Lunch1, Lunch2, Fight1, Fight2, End, Instructions, Credits, Play],
+         Classroom1, Classroom2, Friend1, Friend2, Hand, Zone, Lunch1, Lunch2, Fight1, Fight2, Class, Bag, No, End, Outcome, Outcome2, Instructions, Credits, Play],
     scale: {
         // mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,

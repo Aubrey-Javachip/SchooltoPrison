@@ -46,9 +46,9 @@ export default class Security2 extends Phaser.Scene{
         this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
         //
         
-        this.label = this.add.text(80, 260, 'You see that security is preparing to close the gate.' ,menuConfig).setInteractive();
-        this.label = this.add.text(80, 280, 'You approach them and try to pass into the school but you are stopped.',menuConfig).setInteractive();
-        this.label = this.add.text(80, 320, 'Security: Why are you late?',menuConfig).setInteractive();
+        this.label = this.add.text(80, 280, 'You see that security is preparing to close the gate.' ,menuConfig).setInteractive();
+        this.label = this.add.text(80, 300, 'You approach them and try to pass into the school but you are stopped.',menuConfig).setInteractive();
+        this.label = this.add.text(80, 340, 'Security: Why are you late?',menuConfig).setInteractive();
         //this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
         /*this.label.on("pointerdown", () => {
             this.scene.start('menuScene');

@@ -1,8 +1,8 @@
 import game from "../main.js";
 
-export default class Lunch2 extends Phaser.Scene{
+export default class Bag extends Phaser.Scene{
     constructor(){
-        super("lunch2Scene");
+        super("bagScene");
     }
 
 
@@ -43,12 +43,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //this.add.image(100,400,'textbox').setOrigin(0.5);
     //this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
-    this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
+    this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'sad', menuConfig).setScale(1).setOrigin(0);
     //
     
-	this.label = this.add.text(80, 300, 'While at lunch a fight between your classmates break out' ,menuConfig).setInteractive();
-    this.label = this.add.text(80, 320,'You decide to help de-escalate the fight',menuConfig).setInteractive();
-  
+	this.label = this.add.text(80, 280, 'You hand the officer your bag willingly. They pull out your pepper' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 300, 'spray that you have to protect yourself when walking home.' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 340, 'Security: This is consiered a weapon at school. Come with me.',menuConfig).setInteractive();
+    this.label = this.add.text(80, 380, 'You go with security to be sent home and suspended.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
@@ -67,10 +68,10 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('fight2Scene');
+        this.scene.start('outcomeScene');
         //play student2.js
         }, this);
-    this.typewriteText2('Get involved');
+    this.typewriteText2('End of the Day');
 
     
   /*  //choice 2
@@ -111,7 +112,7 @@ typewriteText2(text)
         ++i
     },
     repeat: length - 1,
-    delay: 50} );
+    delay: 100} );
 	})
 }
 

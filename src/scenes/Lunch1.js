@@ -72,7 +72,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.typewriteText2('Defend your Friend');
 
     
-  /*  //choice 2
+    //choice 2
     this.label3 = this.add.text(500, 400, '',selectConfig).setInteractive();
     //change text color
     this.label3.on("pointerover",() => {
@@ -81,13 +81,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label3.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label3.on("pointerdown", () => {
-        this.scene.start('menuScene');
+        this.scene.start('classScene');
         //play student2.js
         }, this);
-    this.typewriteText3('Go to school');
-    */
+    this.typewriteText3('Don\'t interfere');
+    
 }
-/*
+
 typewriteText3(text)
 {
 	const length = text.length
@@ -100,7 +100,7 @@ typewriteText3(text)
     delay: 100} );
 	})
 }
-*/
+
 typewriteText2(text)
 {
 	const length = text.length

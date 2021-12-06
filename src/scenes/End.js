@@ -11,7 +11,7 @@ create()
 this.cursors = this.input.keyboard.createCursorKeys();
         let menuConfig = {
             fontFamily: 'Courier',
-            fontSize: '20px',
+            fontSize: '30px',
             //backgroundColor: '#A3C941',
             color: '#ffffff',
             align: 'center',
@@ -44,7 +44,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'Would you like to try again?' ,menuConfig).setInteractive();
+	this.label = this.add.text(100, 300, 'Would you like to try again?' ,menuConfig).setInteractive();
  
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
@@ -56,7 +56,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 
     //choice 1
-    this.label2 = this.add.text(100, 420, '',selectConfig).setInteractive();
+    this.label2 = this.add.text(100, 400, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
          this.label2.setStyle({ fill: '#ff0'})});

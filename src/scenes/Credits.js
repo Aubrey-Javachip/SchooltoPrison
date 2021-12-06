@@ -30,7 +30,7 @@ export default class Credits extends Phaser.Scene{
         
 
         //add text
-        //this.add.text(game.config.width/2, game.config.height/2 + 122, 'Programming: Finn Morrison & Emersen Lorenz\nArt and Animation: Marla De Leon & Aubrey Schelbauer\nSound Design: Emersen Lorenz', instructConfig).setOrigin(0.5);
+        //this.add.text(game.config.width/2, game.config.height/2 + 122, 'Programming&Art:Aubrey Schelbauer'instructConfig).setOrigin(0.5);
 
        
     }

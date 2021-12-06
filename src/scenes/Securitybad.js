@@ -46,9 +46,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'sad', menuConfig).setScale(1).setOrigin(0)
     //
     
-	this.label = this.add.text(80, 260, 'You explain that you left your ID at home because you were in a rush.' ,menuConfig).setInteractive();
-    this.label = this.add.text(80, 300, 'Security: Sure, well you\'re late and I can\'t let you in without your ID.',menuConfig).setInteractive();
-    this.label = this.add.text(80, 320, 'We\'re sending you to the office to be marked tardy.',menuConfig).setInteractive();
+	this.label = this.add.text(80, 280, 'You explain that you left your ID at home because you were in a rush.' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 320, 'Security: Sure, well you\'re late and I can\'t let you in without your ID.',menuConfig).setInteractive();
+    this.label = this.add.text(80, 340, 'We\'re sending you to the office to be marked tardy.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 340, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');

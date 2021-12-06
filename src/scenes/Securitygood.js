@@ -46,8 +46,8 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
     //
     
-	this.label = this.add.text(80, 260, 'You explain the mishap with you alarm.' ,menuConfig).setInteractive();
-    this.label = this.add.text(80, 300, 'Security: Alright, make sure you\'re here on time.',menuConfig).setInteractive();
+	this.label = this.add.text(80, 300, 'You explain the mishap with you alarm.' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 340, 'Security: Alright, make sure you\'re here on time.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {

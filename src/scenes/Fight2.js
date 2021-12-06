@@ -45,9 +45,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
     //
     
-	this.label = this.add.text(100, 260, 'You intervene the fight when security comes.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280,'The two students that were fighting leave and go with security ',menuConfig).setInteractive();
-    this.label = this.add.text(100, 300,'to sort things out while you finish up the rest of your day.',menuConfig).setInteractive();
+	this.label = this.add.text(100, 280, 'You intervene the fight when security comes.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 300,'The two students that were fighting leave and go with security ',menuConfig).setInteractive();
+    this.label = this.add.text(100, 320,'to sort things out while you finish up the rest of your day.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
@@ -66,7 +66,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('endScene');
+        this.scene.start('outcome2Scene');
         //play student2.js
         }, this);
     this.typewriteText2('End of the day');

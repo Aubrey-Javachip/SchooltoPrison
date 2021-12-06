@@ -33,7 +33,7 @@ export default class Menu extends Phaser.Scene{
         //this.sfx_start = this.sound.add('sfx_start', {volume: 0.4});
         
 
-        this.add.text(game.config.width/2, game.config.height/2 + 20, 'Press SPACE to Start', menuConfig).setOrigin(0.5);
+        this.add.text(game.config.width/2, game.config.height/2 + 0, 'Press SPACE to Start', menuConfig).setOrigin(0.5);
 
         //this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'title').setOrigin(0.5);
 

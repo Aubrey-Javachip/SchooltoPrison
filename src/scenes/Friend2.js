@@ -45,9 +45,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
     //
     
-	this.label = this.add.text(100, 260, 'You talk to your friend sitting next to you during class for fun.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 300,'Teacher: Please keep the chatting outside of the classroom.',menuConfig).setInteractive();
-    this.label = this.add.text(100, 340, 'You stop talking and continue to sit through class until...',menuConfig).setInteractive();
+	this.label = this.add.text(100, 280, 'You talk to your friend sitting next to you during class for fun.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 320,'Teacher: Please keep the chatting outside of the classroom.',menuConfig).setInteractive();
+    this.label = this.add.text(100, 360, 'You stop talking and continue to sit through class until...',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
