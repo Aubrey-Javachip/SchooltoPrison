@@ -41,7 +41,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
         
     this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
     //this.add.image(100,400,'textbox').setOrigin(0.5);
-    this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
     //
     
 	this.label = this.add.text(100, 260, 'You ask your friend next to you a question during class. ' ,menuConfig).setInteractive();

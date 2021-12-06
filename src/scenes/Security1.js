@@ -41,13 +41,14 @@ this.cursors = this.input.keyboard.createCursorKeys();
         
     this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
     //this.add.image(100,400,'textbox').setOrigin(0.5);
-    this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    //this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'You see that security is preparing to close the gate.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280, 'You approach them and try to pass into the school but you are stopped.',menuConfig).setInteractive();
-    this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
-    this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
+	this.label = this.add.text(80, 280, 'You see that security is preparing to close the gate.' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 300, 'You approach them and try to pass into the school but you are stopped.',menuConfig).setInteractive();
+    this.label = this.add.text(80, 340, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
+    this.label = this.add.text(80, 380, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
         //play student2.js
@@ -56,7 +57,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 
     //choice 1
-    this.label2 = this.add.text(100, 400, '',selectConfig).setInteractive();
+    this.label2 = this.add.text(100, 410, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
          this.label2.setStyle({ fill: '#ff0'})});

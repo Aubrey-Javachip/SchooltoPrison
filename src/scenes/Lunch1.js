@@ -25,7 +25,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
 
         let selectConfig = {
             fontFamily: 'Courier',
-            fontSize: '20px',
+            fontSize: '30px',
             //backgroundColor: '#A3C941',
             color: '#00ffff',
             align: 'center',
@@ -41,11 +41,11 @@ this.cursors = this.input.keyboard.createCursorKeys();
         
     this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
     //this.add.image(100,400,'textbox').setOrigin(0.5);
-    this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'While at lunch a fight between your classmates break out.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280,'You decide to help de-escalate the fight before someone gets hurt.',menuConfig).setInteractive();
+	this.label = this.add.text(80, 300, 'While at lunch a fight between your classmates break out.' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 320,'You decide to help de-escalate the fight before someone gets hurt.',menuConfig).setInteractive();
 
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
@@ -57,7 +57,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 
     //choice 1
-    this.label2 = this.add.text(100, 420, '',selectConfig).setInteractive();
+    this.label2 = this.add.text(100, 400, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
          this.label2.setStyle({ fill: '#ff0'})});

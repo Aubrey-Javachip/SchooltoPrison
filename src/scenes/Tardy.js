@@ -41,11 +41,12 @@ this.cursors = this.input.keyboard.createCursorKeys();
         
     this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
     //this.add.image(100,400,'textbox').setOrigin(0.5);
-    this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    //this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 300, 'You accept the tardy and go to class as usual.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 320, 'Hopefully you didn\'t miss too much class.',menuConfig).setInteractive();
+	this.label = this.add.text(80, 300, 'You accept the tardy and go to class as usual.' ,menuConfig).setInteractive();
+    this.label = this.add.text(80, 320, 'Hopefully you didn\'t miss too much class.',menuConfig).setInteractive();
    // this.label = this.add.text(100, 340, 'class before security closes the school gate...',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
