@@ -42,6 +42,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
     //this.add.image(100,400,'textbox').setOrigin(0.5);
     this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
+    this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'happy', menuConfig).setScale(1).setOrigin(0);
     //
     
 	this.label = this.add.text(80, 300, 'While at lunch a fight between your classmates break out.' ,menuConfig).setInteractive();

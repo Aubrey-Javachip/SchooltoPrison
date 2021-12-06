@@ -14,6 +14,10 @@ export default class Load extends Phaser.Scene {
         this.load.image('student1','student11.png');
         this.load.image('student2','student22.png');
         this.load.image('speech', 'speech.PNG');
+        this.load.image('happy', 'Happy.PNG');
+        this.load.image('mad', 'Mad.PNG');
+        this.load.image('sad', 'Sad.PNG');
+        this.load.image('neutral', 'Neutral.PNG');
         ///////////////////////////////
        /* this.load.atlasXML('numbersAtlas', 'numbersSpriteSheet.png', 'sprites.xml');
         this.load.atlas('ninja_run_2', 'ninja_run_spritesheet.png', 'ninja_run_spritesheet.json');

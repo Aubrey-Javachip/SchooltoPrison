@@ -42,11 +42,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
     //this.add.image(100,400,'textbox').setOrigin(0.5);
     this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
+    this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'sad', menuConfig).setScale(1).setOrigin(0);
     //
 	this.label = this.add.text(100, 260, 'You raise your hand to participate and ask questions.' ,menuConfig).setInteractive();
     this.label = this.add.text(100, 300,'Teacher: You\'re not paying attention. You\'re not trying hard enough. ',menuConfig).setInteractive();
     this.label = this.add.text(100, 340, 'Discouraged you stop participating in that class and struggle on the exams',menuConfig).setInteractive();
     this.label = this.add.text(100, 360,'At least this class is almost over',menuConfig).setInteractive();
+
 
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
