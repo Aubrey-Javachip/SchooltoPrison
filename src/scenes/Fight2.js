@@ -1,8 +1,8 @@
 import game from "../main.js";
 
-export default class Friend2 extends Phaser.Scene{
+export default class Fight2 extends Phaser.Scene{
     constructor(){
-        super("friend2Scene");
+        super("fight2Scene");
     }
 
 
@@ -44,9 +44,10 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //
     
-	this.label = this.add.text(100, 260, 'You talk to your friend sitting next to you during class for fun.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 300,'Teacher: Please keep the chatting outside of the classroom.',menuConfig).setInteractive();
-    this.label = this.add.text(100, 340, 'You stop talking and continue to sit through class until...',menuConfig).setInteractive();
+	this.label = this.add.text(100, 260, 'You intervene the fight when security comes.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 280,'The two students that were fighting leave and go with security ',menuConfig).setInteractive();
+    this.label = this.add.text(100, 300,'to sort things out while you finish up the rest of your day.',menuConfig).setInteractive();
+    //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
     /*this.label.on("pointerdown", () => {
         this.scene.start('menuScene');
@@ -56,7 +57,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 
     //choice 1
-    this.label2 = this.add.text(90, 400, '',selectConfig).setInteractive();
+    this.label2 = this.add.text(100, 420, '',selectConfig).setInteractive();
     //change text color
     this.label2.on("pointerover",() => {
          this.label2.setStyle({ fill: '#ff0'})});
@@ -64,10 +65,10 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('lunch2Scene');
+        this.scene.start('endScene');
         //play student2.js
         }, this);
-    this.typewriteText2('Time for lunch');
+    this.typewriteText2('End of the day');
 
     
   /*  //choice 2

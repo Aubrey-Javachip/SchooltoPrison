@@ -25,7 +25,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
 
         let selectConfig = {
             fontFamily: 'Courier',
-            fontSize: '20px',
+            fontSize: '30px',
             //backgroundColor: '#A3C941',
             color: '#00ffff',
             align: 'center',
@@ -44,9 +44,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //
 	this.label = this.add.text(100, 260, 'You raise your hand to participate and ask questions.' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280,'Teacher: You\'re not paying attention. You\'re not trying hard enough. ',menuConfig).setInteractive();
-    this.label = this.add.text(100, 320, 'Discouraged you stop participating in that class and struggle on the exams',menuConfig).setInteractive();
-    this.label = this.add.text(100, 340,'At least this class is almost over',menuConfig).setInteractive();
+    this.label = this.add.text(100, 300,'Teacher: You\'re not paying attention. You\'re not trying hard enough. ',menuConfig).setInteractive();
+    this.label = this.add.text(100, 340, 'Discouraged you stop participating in that class and struggle on the exams',menuConfig).setInteractive();
+    this.label = this.add.text(100, 360,'At least this class is almost over',menuConfig).setInteractive();
 
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
    // this.label = this.add.text(100, 360, 'You rummage through your backpack and realize you left it at home.',menuConfig).setInteractive();
@@ -66,7 +66,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
               this.label2.setStyle({ fill: '#00ffff'})});
     //change scene on click
     this.label2.on("pointerdown", () => {
-        this.scene.start('tardyScene');
+        this.scene.start('lunch1Scene');
         //play student2.js
         }, this);
     this.typewriteText2('Go to lunch');
