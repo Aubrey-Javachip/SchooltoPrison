@@ -34,7 +34,8 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.label2 = this.add.text(300, 200, '',menuConfig);
     this.typewriteText2('Choose a student');
 
-    this.start = this.add.image(game.config.width/4 + 100, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.5).setOrigin(0).setInteractive();
+    //this.start = this.add.image(game.config.width/4 + 100, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.5).setOrigin(0).setInteractive();
+    this.start = this.add.image(game.config.width/4 + 70, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
     this.start.on("pointerdown", () => {
                 // this.game.scene.scenes.forEach(scene => {
                 //     if (this.gameManager && scene.key && scene.key.includes("_")){
@@ -47,7 +48,8 @@ this.cursors = this.input.keyboard.createCursorKeys();
         }, this);
 
     ///////////////////////////////////////////////////////////////////////    
-    this.start = this.add.image(game.config.width/4 + 300, game.config.height/4 +150, 'student2', menuConfig).setScale(0.5).setOrigin(0).setInteractive();
+   this.start = this.add.image(game.config.width/4 + 320, game.config.height/4 +150, 'student2', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
+  //  this.start = this.add.image('student2', menuConfig).setOrigin(0,0).setInteractive();
     this.start.on("pointerdown", () => {
                 // this.game.scene.scenes.forEach(scene => {
                 //     if (this.gameManager && scene.key && scene.key.includes("_")){

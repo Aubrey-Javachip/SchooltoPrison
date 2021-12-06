@@ -25,7 +25,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
 
         let selectConfig = {
             fontFamily: 'Courier',
-            fontSize: '20px',
+            fontSize: '30px',
             //backgroundColor: '#A3C941',
             color: '#00ffff',
             align: 'center',

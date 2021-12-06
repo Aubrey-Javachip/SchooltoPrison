@@ -11,8 +11,8 @@ export default class Load extends Phaser.Scene {
         //////////////////////////TEST ASSETS///////////
         this.load.image('yard', 'schoolyard.jpeg');
         this.load.image('textbox', 'speechbox.png');
-        this.load.image('student1','Student1.jpg');
-        this.load.image('student2','Student2.jpg');
+        this.load.image('student1','student11.png');
+        this.load.image('student2','student22.png');
         this.load.image('speech', 'speech.PNG');
         ///////////////////////////////
        /* this.load.atlasXML('numbersAtlas', 'numbersSpriteSheet.png', 'sprites.xml');
