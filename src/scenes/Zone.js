@@ -39,10 +39,13 @@ this.cursors = this.input.keyboard.createCursorKeys();
 
     
         
-    this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
+        this.yard = this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
+        this.yard.alpha = 0.7
+    
     //this.add.image(100,400,'textbox').setOrigin(0.5);
     this.add.image(this.scale.width / 2 - 10 , this.scale.height / 2 + 130,'speech', menuConfig).setScale(0.65, 0.8).setOrigin(0.5);
     this.add.image(game.config.width/4 - 200 , game.config.height/4 + 20, 'neutral', menuConfig).setScale(1).setOrigin(0);
+    this.add.image(game.config.width/4 + 360 , game.config.height/4 - 150, 'bar1', menuConfig).setScale(0.6).setOrigin(0)
     //
 	this.label = this.add.text(100, 260, 'You zone out in class and the teacher calls on you.' ,menuConfig).setInteractive();
     this.label = this.add.text(100, 280,'You give a guess and the teacher praises you for your effort.',menuConfig).setInteractive();
