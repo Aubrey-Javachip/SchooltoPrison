@@ -48,7 +48,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
     
 	this.label = this.add.text(100, 260, 'You ask your friend next to you a question during class. ' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280,'Teacher: You\'re being disrespectful. Go sit out in the hallway ',menuConfig).setInteractive();
+    this.label = this.add.text(100, 300,'Teacher: You\'re being disrespectful. Go sit out in the hallway ',menuConfig).setInteractive();
     this.label = this.add.text(100, 320, 'for the rest of class. I\'ll deal with you later.',menuConfig).setInteractive();
     this.label = this.add.text(100, 360, 'You stop talking and continue to sit outside of the classroom',menuConfig).setInteractive();
     this.label = this.add.text(100, 380, 'until class is over and the teacher gives you after school detention.',menuConfig).setInteractive();

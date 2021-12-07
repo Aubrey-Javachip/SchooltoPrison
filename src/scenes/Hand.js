@@ -48,8 +48,8 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //
 	this.label = this.add.text(100, 260, 'You raise your hand to participate and ask questions.' ,menuConfig).setInteractive();
     this.label = this.add.text(100, 300,'Teacher: You\'re not paying attention. You\'re not trying hard enough. ',menuConfig).setInteractive();
-    this.label = this.add.text(100, 340, 'Discouraged you stop participating in that class and struggle on the exams',menuConfig).setInteractive();
-    this.label = this.add.text(100, 360,'At least this class is almost over',menuConfig).setInteractive();
+    this.label = this.add.text(100, 340, 'Discouraged you stop participating in that class and struggle on',menuConfig).setInteractive();
+    this.label = this.add.text(100, 360,'the exams. At least this class is almost over.',menuConfig).setInteractive();
 
 
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();

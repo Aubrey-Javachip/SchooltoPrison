@@ -29,7 +29,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
 	//this.label = this.add.text(100, 100, '',menuConfig);
     //this.typewriteText('talk about white privlidge.');
     //this.add.text(50, 100, 'Due to the series of events involving intensive sercurity and',menuConfig);
-    this.add.text(50, 120, 'Due to white privilege and social constructs This student was not',menuConfig);
+    this.add.text(50, 120, 'Due to white privilege and social constructs, this student was not',menuConfig);
     this.add.text(50, 140,'effected by the school-to-prison pipeline while other students',menuConfig);
     this.add.text(50, 160, 'were. Due to the social constructs, racial inequality and prejudice that',menuConfig);
     this.add.text(50, 180, 'is integrated into our public school systems; young minority students,', menuConfig);
@@ -46,6 +46,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //change pic opacity
   
         */
+    this.add.text(game.config.width/2 - 60, game.config.height/2 + 100, 'Press SPACE', menuConfig).setOrigin(0);
         this.cursors.space.on('down', () => {/*this.sfx_start.play();*/ this.scene.start('endScene', this.bgm)});
     
 }

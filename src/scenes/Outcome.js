@@ -37,9 +37,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.text(50, 220, 'attention to succeed. Polices such as these are only perpetuating', menuConfig);
     this.add.text(50, 240, 'the growing mass incarceration in the United States.', menuConfig);
     /*this.typewriteText('Due to the series of events involving intensive sercurity and \nzero-tolerance policies within the school. This student along\n',
-    'along with many others, fell victim to the school-to-prison pipeline. Due to the social constructs, racial inequality and prejudice that is',
-     'integrated into our public school systems; young minority students, especially Black students, are not given the proper help and attention to succeed.',
-     'Polices such as these are only perpetuating the growing mass incarceration in the United States')
+    
      */
     //
     //this.label2 = this.add.text(300, 200, '',menuConfig);
@@ -52,6 +50,9 @@ this.cursors = this.input.keyboard.createCursorKeys();
         //play student2.js
         }, this);
         */
+
+        this.add.text(game.config.width/2 - 60, game.config.height/2 + 100, 'Press SPACE', menuConfig).setOrigin(0);
+
         this.cursors.space.on('down', () => {/*this.sfx_start.play();*/ this.scene.start('endScene', this.bgm)});
     
 }

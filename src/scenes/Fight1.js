@@ -47,10 +47,10 @@ this.cursors = this.input.keyboard.createCursorKeys();
     this.add.image(game.config.width/4 + 360 , game.config.height/4 - 150, 'bar6', menuConfig).setScale(0.6).setOrigin(0)
     //
     
-	this.label = this.add.text(100, 260, 'You intervene the fight when security comes' ,menuConfig).setInteractive();
-    this.label = this.add.text(100, 280,'The two students that were fighting leave and go with a warning while you get pulled aside by security',menuConfig).setInteractive();
+	this.label = this.add.text(100, 260, 'You intervene the fight when security comes.' ,menuConfig).setInteractive();
+    this.label = this.add.text(100, 280,'The two students that were fighting leave and go with a warning,',menuConfig).setInteractive();
     this.label = this.add.text(100, 300,'while you get pulled aside by security',menuConfig).setInteractive();
-    this.label = this.add.text(100, 320,'After being accused as a troublemaker and a threat you are sent to the principles office and you are sent home early.',menuConfig).setInteractive();
+    this.label = this.add.text(100, 320,'After being accused as a troublemaker and a threat you are sent to',menuConfig).setInteractive();
     this.label = this.add.text(100, 340,'the principles office and you are sent home early.',menuConfig).setInteractive();
     this.label = this.add.text(100, 360,'You miss the rest of your classes.',menuConfig).setInteractive();
     //this.label = this.add.text(100, 320, 'Security: Where\'s your school ID?',menuConfig).setInteractive();
