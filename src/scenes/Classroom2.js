@@ -75,7 +75,7 @@ this.cursors = this.input.keyboard.createCursorKeys();
 
     
     //choice 2
-    this.label3 = this.add.text(500, 400, '',selectConfig).setInteractive();
+    this.label3 = this.add.text(580, 400, '',selectConfig).setInteractive();
     //change text color
     this.label3.on("pointerover",() => {
          this.label3.setStyle({ fill: '#ff0'})});
