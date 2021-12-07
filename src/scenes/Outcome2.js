@@ -23,13 +23,19 @@ this.cursors = this.input.keyboard.createCursorKeys();
        
         }
         
-    //this.add.image(this.scale.width / 2, this.scale.height / 2 - 54,'yard').setOrigin(0.5);
-    //this.add.image(100,400,'textbox').setOrigin(0.5);
-    //this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
+    
     //this.add.image(this.scale.width / 4,this.scale.height/4,'student1').setOrigin(0,0);
     //this.add.image(600,120,'student2').setOrigin(0,0);
-	this.label = this.add.text(100, 100, '',menuConfig);
-    this.typewriteText('talk about white privlidge.');
+	//this.label = this.add.text(100, 100, '',menuConfig);
+    //this.typewriteText('talk about white privlidge.');
+    //this.add.text(50, 100, 'Due to the series of events involving intensive sercurity and',menuConfig);
+    this.add.text(50, 120, 'Due to white privilege and social constructs This student was not',menuConfig);
+    this.add.text(50, 140,'effected by the school-to-prison pipeline while other students',menuConfig);
+    this.add.text(50, 160, 'were. Due to the social constructs, racial inequality and prejudice that',menuConfig);
+    this.add.text(50, 180, 'is integrated into our public school systems; young minority students,', menuConfig);
+    this.add.text(50, 200, 'especially Black students, are not given the proper help and', menuConfig);
+    this.add.text(50, 220, 'attention to succeed. Polices such as these are only perpetuating', menuConfig);
+    this.add.text(50, 240, 'the growing mass incarceration in the United States.', menuConfig);
     //
     //this.label2 = this.add.text(300, 200, '',menuConfig);
     //this.typewriteText2('');

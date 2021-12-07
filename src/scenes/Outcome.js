@@ -27,45 +27,26 @@ this.cursors = this.input.keyboard.createCursorKeys();
     //this.add.image(100,400,'textbox').setOrigin(0.5);
     //this.add.image(this.scale.width / 2, this.scale.height / 2 + 100,'textbox', menuConfig).setOrigin(0.5);
     //this.add.image(this.scale.width / 4,this.scale.height/4,'student1').setOrigin(0,0);
-    //this.add.image(600,120,'student2').setOrigin(0,0);
-	this.label = this.add.text(100, 100, '',menuConfig);
-    this.typewriteText('talk about future.');
+    //this.add.image(80,200,'graph').setOrigin(0,0).setScale(0.5);
+	this.add.text(50, 100, 'Due to the series of events involving intensive sercurity and',menuConfig);
+    this.add.text(50, 120, 'zero-tolerance policies within the school. This student along',menuConfig);
+    this.add.text(50, 140,'with many others, fell victim to the school-to-prison pipeline.',menuConfig);
+    this.add.text(50, 160, 'Due to the social constructs, racial inequality and prejudice that is',menuConfig);
+    this.add.text(50, 180, 'integrated into our public school systems; young minority students,', menuConfig);
+    this.add.text(50, 200, 'especially Black students, are not given the proper help and', menuConfig);
+    this.add.text(50, 220, 'attention to succeed. Polices such as these are only perpetuating', menuConfig);
+    this.add.text(50, 240, 'the growing mass incarceration in the United States.', menuConfig);
+    /*this.typewriteText('Due to the series of events involving intensive sercurity and \nzero-tolerance policies within the school. This student along\n',
+    'along with many others, fell victim to the school-to-prison pipeline. Due to the social constructs, racial inequality and prejudice that is',
+     'integrated into our public school systems; young minority students, especially Black students, are not given the proper help and attention to succeed.',
+     'Polices such as these are only perpetuating the growing mass incarceration in the United States')
+     */
     //
     //this.label2 = this.add.text(300, 200, '',menuConfig);
     //this.typewriteText2('');
 
     //this.start = this.add.image(game.config.width/4 + 100, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.5).setOrigin(0).setInteractive();
     /*this.start1 = this.add.image(game.config.width/4 + 70, game.config.height/4 + 150, 'student1', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
-    
-    //change pic opacity
-    this.start1.on("pointerover",() => {
-         this.start1.alpha = (0.5)});
-    this.start1.on("pointerout",() => {
-              this.start1.alpha = (1)});
-    this.start1.on("pointerdown", () => {
-                // this.game.scene.scenes.forEach(scene => {
-                //     if (this.gameManager && scene.key && scene.key.includes("_")){
-                //         this.gameManager.destroyScene(scene);
-                //     }
-                // })
-
-        this.scene.start('student1Scene');
-        //play student1.js
-        }, this);
-
-    ///////////////////////////////////////////////////////////////////////    
-    this.start2 = this.add.image(game.config.width/4 + 320, game.config.height/4 +150, 'student2', menuConfig).setScale(0.2).setOrigin(0).setInteractive();
-  //  this.start = this.add.image('student2', menuConfig).setOrigin(0,0).setInteractive();
-    this.start2.on("pointerover",() => {
-        this.start2.alpha = (0.5)});
-    this.start2.on("pointerout",() => {
-            this.start2.alpha = (1)});
-    this.start2.on("pointerdown", () => {
-                // this.game.scene.scenes.forEach(scene => {
-                //     if (this.gameManager && scene.key && scene.key.includes("_")){
-                //         this.gameManager.destroyScene(scene);
-                //     }
-                // })
 
         this.scene.start('student2Scene');
         //play student2.js
